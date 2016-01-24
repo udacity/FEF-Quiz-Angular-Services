@@ -1,0 +1,19 @@
+<h3>{{lotsStore.name}} Store</h3>
+
+<div class="row bricksList">
+  <div id="LoB-{{size}}" class="col-sm-4 well" ng-repeat="(size, brick) in lotsStore.redBricks">
+    <p>Size: Red {{size}}</p>
+    <p>Quantity: <span class="quantity">{{brick.quantity}}</span></p>
+    <p>Price: {{brick.price}}</p>
+  </div>
+  <div id="LoB-{{size}}" class="col-sm-4 well" ng-repeat="(size, brick) in lotsStore.blueBricks">
+    <p>Size: Blue {{size}}</p>
+    <p>Quantity: {{brick.quantity}}</p>
+    <p>Price: {{brick.price}}</p>
+  </div>
+  <div id="LoB-{{size}}" class="col-sm-4 well" ng-repeat="(size, brick) in lotsStore.greenBricks">
+    <p>Size: Green {{size}}</p>
+    <p>Quantity: {{brick.quantity}}</p>
+    <p>Price: {{brick.price}}</p>
+  </div>
+</div>

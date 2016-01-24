@@ -1,0 +1,42 @@
+[{
+  "name": "Controller Quiz",
+  "code": "stupendous!",
+  "tests": [
+    {
+      "description": "`brickWarehouse` service exists",
+      "definition": {
+        "waitForEvent": "service-exists",
+        "exists": true
+      }
+    },
+    {
+      "description": "Data from both Controllers are combined into Service",
+      "definition": {
+        "waitForEvent": "combined-data",
+        "exists": true
+      }
+    },
+    {
+      "description": "Each Bricks-A-Bunch brick has a Buy button",
+      "definition": {
+        "nodes": ".bricksList button",
+        "get": "count",
+        "equals": 3
+      }
+    },
+    {
+      "description": "Adding an item to the cart reduces it's quantity",
+      "definition": {
+        "waitForEvent": "add-to-cart",
+        "exists": true
+      }
+    },
+    {
+      "description": "Changing the quantity in one store changes it in the other.",
+      "definition": {
+        "waitForEvent": "stores-in-sync",
+        "exists": true
+      }
+    }
+  ]
+}]

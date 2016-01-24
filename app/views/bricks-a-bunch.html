@@ -1,0 +1,9 @@
+<h3>{{bunchesStore.name}} Store</h3>
+
+<ul class="row bricksList">
+  <li id="BaB-{{size}}" class="col-sm-3 well brick-{{size}}" ng-repeat="(size, brick) in bunchesStore.redBricks">
+    <p>Size: {{size}}</p>
+    <p>Quantity: <span class="quantity">{{brick.quantity}}</span></p>
+    <p>Price: {{brick.price}}</p>
+  </li>
+</ul>
