@@ -45,4 +45,8 @@ angular.module('serviceQuizApp')
         }
       }
     };
+
+    this.decreaseQuantity = function(color, size) {
+      this.bricks[color][size].quantity -= 1;
+    };
   });
