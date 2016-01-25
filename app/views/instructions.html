@@ -6,12 +6,14 @@
 <div class="row marketing">
   <h2>Instructions</h2>
   <ul>
-    <li>create a <code>BricksABunchCart</code> template and controller for the BricksABunch store</li>
-    <li>create a <code>BricksABunch</code> service
+    <li>create a <code>brickWarehouse</code> service</li>
+    <li>extract brick data from <code>BricksABunchCtrl</code> and <code>LotsOBricksCtrl</code> controllers to the <code>brickWarehouse</code> service</li>
+    <li>inject <code>brickWarehouse</code> into both controllers</li>
+    <li>add an "Add to Cart" button to each <code>BricksABunchCtrl</code> item
       <ul>
-        <li>inject the service into the <code>BricksABunch</code> and <code>BricksABunchCart</code> controllers</li>
+        <li>clicking this button will decrease that brick size's quantity in the <code>brickWarehouse</code> service</li>
       </ul>
     </li>
-    <li>create a <code>BricksAdmin</code> service</li>
+    <li>other than adding the button to <code>bricks-a-bunch.html</code>, no template code should change</li>
   </ul>
 </div>
