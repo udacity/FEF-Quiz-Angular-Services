@@ -8,7 +8,7 @@
  * Controller of the serviceQuizApp
  */
 angular.module('serviceQuizApp')
-  .controller('BricksABunchCtrl', function () {
+  .controller('BricksABunchCtrl', ['brickWarehouse', function (warehouse) {
     this.name = 'Bricks A Bunch';
 
     this.redBricks = {
@@ -25,4 +25,4 @@ angular.module('serviceQuizApp')
         price: 0.05
       }
     };
-  });
+  }]);
