@@ -13,7 +13,7 @@ angular.module('serviceQuizApp')
 
     this.redBricks = warehouse.bricks.red;
 
-    this.addToCart = function(price) {
-      warehouse.decreaseQuantity('red', price);
+    this.addToCart = function(size) {
+      warehouse.decreaseQuantity('red', size);
     };
   }]);
